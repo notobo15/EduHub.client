@@ -1,0 +1,28 @@
+.container {
+  overflow: auto;
+  position: fixed !important;
+  inset-inline-start: 0;
+  top: 0;
+  bottom: 0;
+  scrollbar-width: thin;
+  background: #fff !important;
+  border-right: 1px solid #beb5b5;
+  & > div:global(.ant-layout-sider-children) {
+    height: unset !important;
+  }
+
+  & > div:global(.ant-layout-sider-trigger) {
+    background: #bfbfbf;
+    color: #000;
+  }
+
+  & li svg {
+    font-size: 24px !important;
+  }
+}
+.logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(0, 0, 0);
+  border-radius: 6px;
+}
