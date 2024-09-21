@@ -1,0 +1,30 @@
+.btnView {
+  color: #fff;
+  background: #198754;
+  border: 1px solid #dfd4d4;
+}
+.btnEdit {
+  color: #fff;
+  background: #ffc107;
+  border: 1px solid #dfd4d4;
+}
+.btnDelete {
+  color: #fff;
+  border: 1px solid #dfd4d4;
+  background: #dc3545;
+}
+.space {
+  gap: 5px;
+  display: flex;
+  justify-content: space-between;
+  & > span {
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
