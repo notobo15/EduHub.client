@@ -12,7 +12,6 @@ import {
 } from "@ant-design/icons";
 import style from "./Sider.module.scss";
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
-import { SetIsCollapseSider } from "@/redux/adminReducer";
 import Link from "next/link";
 import { FaPerson, FaUserGroup, FaUserPen } from "react-icons/fa6";
 import { BiCategory } from "react-icons/bi";
@@ -24,6 +23,7 @@ import { useRouter } from "next/router";
 import { usePathname } from "next/navigation";
 import { ItemType, MenuItemType } from "antd/es/menu/interface";
 import { FaShoppingCart } from "react-icons/fa";
+import { SetIsCollapseSider } from "@/features/admin/adminSlice";
 
 type MenuItem = Required<MenuProps>["items"][number];
 
@@ -66,7 +66,6 @@ const { Sider } = Layout;
 export default function Index() {
   const dispatch = useAppDispatch();
   const path = usePathname();
-  console.log("path", path);
   const isCollapse = useAppSelector((state) => state.admin.isCollapseSider);
 
   const [selectedKey, setSelectedKey] = useState<string>("0");
