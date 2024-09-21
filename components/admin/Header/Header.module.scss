@@ -1,0 +1,16 @@
+.header {
+  background: #fff;
+  padding: 10px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btnCollapse {
+  font-size: 16px;
+}
+.headerRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
