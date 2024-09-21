@@ -7,6 +7,7 @@ export default function Switch() {
 
   const theme = useAppSelector((state) => state.global.theme);
   function handleChangeTheme() {
+    1;
     dispatch(setTheme(theme === "light" ? "dark" : "light"));
   }
   return (
