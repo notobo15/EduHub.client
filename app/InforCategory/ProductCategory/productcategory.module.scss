@@ -1,0 +1,55 @@
+.productCategory {
+    display: flex;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 1px 10px 0px;
+    margin-top: 25px;
+    .imgProductCategory{
+        flex: 1;
+        img {
+            width: 250px;
+            height: 125px;
+            object-fit: fill;
+            border-radius: 5px;
+        }
+    }
+    .inforProductCategory{
+        flex: 3;
+        display: flex;
+        justify-content: space-between;
+        .leftInforProductCategory{
+            margin-left: 20px;
+            .TitleProduct{
+                margin-top: 10px;
+                font-size: 18px;
+                font-weight: 600;
+            }
+            .AuthorProduct{
+                margin-top: 10px;
+                font-size: 15px;
+                color: #b2b2b2;
+            }
+            .reviewProduct{
+                font-size: 15px;
+                svg{
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+            .timeLessonProduct{
+                font-size: 15px;
+            }
+
+        }
+        .priceProductCategory{
+            margin-top: 10px;
+            margin-right: 20px;
+            font-size: 17px;
+            font-weight: 500;
+            p{
+                color: #b2b2b2;
+                font-size: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.ItemProductSlider{
+    margin-top: 30px;
+    width: 310px;
+    margin-bottom: 10px;
+    img{
+        height: 154px;
+        width: 310px;
+        border-radius: 5px;
+        object-fit: fill;
+        // z-index: 0;
+    }
+    .TitleProductSlider {
+        margin-top: 20px;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .AuthorProductSlider {
+        font-size: 15px;
+        margin-top: 10px;
+        color: #848484;
+    }
+    .reviewProductSlider {
+        display: flex;
+        align-items: center;
+        svg {
+            font-size: 17px;
+        }
+        li {
+            margin-inline-end: 0 !important;
+        }
+        span{
+            margin-left: 5px;
+        }
+    }
+    .PriceProductSlider{
+        margin-top: 5px;
+        font-size: 20px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        p{
+            font-size: 15px;
+            color: #848484;
+            margin-left: 5px;
+        }
+        .btnSell {
+            margin-top: 10px !important;
+        }
+    }
+
+}

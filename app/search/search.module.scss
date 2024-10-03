@@ -1,0 +1,64 @@
+.headerSearch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    h1 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .filterSearch {
+        display: flex;
+        align-items: center;
+        button {
+            width: 90px;
+            border: 1px solid #d9d9d9;
+            height: 33px;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-size: 15px;
+            .iconFillter {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+                
+        }
+    }
+   
+}
+
+.infoSearch{
+    display: flex;
+    margin-top: 30px;
+    .reviewSearch{
+        flex: 1;
+        .reviewStarSearch{
+            h1{
+                margin-bottom: 10px;
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+        .reviewTimeSearch{
+            margin-top: 20px;
+            h1{
+                margin-bottom: 10px;
+                font-size: 18px;
+                font-weight: 500;
+
+            }
+        }
+    }
+    .productSearch{
+        flex: 3;
+        .paginationProductSearch {
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    }
+
+}

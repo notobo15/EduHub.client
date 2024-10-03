@@ -3,6 +3,11 @@ import { Inter } from "next/font/google";
 import "normalize.css";
 import "@/styles/globals.scss";
 import GlobalProvider from "@/redux/GlobalProvider";
+import Header from '@/components/client/header'
+import Footer from '@/components/client/footer'
+import Category from '@/components/client/Category'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Container from 'react-bootstrap/Container'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -18,7 +23,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <GlobalProvider>{children}</GlobalProvider>
+        <GlobalProvider>
+          <Header />
+          <Category />
+          <Container>
+            {children}
+          </Container>
+          <Footer />
+        </GlobalProvider>
       </body>
     </html>
   );
